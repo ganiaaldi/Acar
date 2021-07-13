@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDark</item>
+        <item name="colorAccent">@color/colorSecond</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <style name="WhiteBoldText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteBoldTextSmall" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteDarkText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="WhiteDarkTextSmall" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+</resources>
