@@ -6,4 +6,7 @@
     <color name="colorVeryDark">#5C29AE</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorPink">#FF7676</color>
+    <color name="colorBlue">#767CFF</color>
+    <color name="colorGreen">#4CAF50</color>
 </resources>

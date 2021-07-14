@@ -2,4 +2,6 @@
     <string name="app_name">Acar</string>
     <string name="text_title">Create your own ID Card</string>
     <string name="text_desc_start">Let\'s make and customize id card, application friend, fans card, etc. And share to you all friend.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

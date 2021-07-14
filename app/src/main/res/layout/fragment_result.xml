@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResultFragment"
+    android:background="@drawable/bg_gradient">
+
+
+    <!-- Sakura -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintCircleRadius="8dp"
+        android:id="@+id/frameSakura"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button_pink">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sakura"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="320dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Friendship Application"
+            style="@style/WhiteBoldText"
+            android:id="@+id/tvTitleSakura"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgLogoSakuraOne"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imgLogoSakuraTwo"
+            />
+
+        <View
+        android:id="@+id/lineTitleSakura"
+        android:layout_marginTop="35dp"
+        android:layout_width="320dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="5dp"
+        android:background="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgPhotoSakura"
+            android:layout_below="@id/lineTitleSakura"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:background="@drawable/border_white"/>
+
+        <TextView
+            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNameSakura"
+            android:layout_alignBottom="@id/lineNameSakura"
+            />
+
+        <View
+            android:id="@+id/lineNameSakura"
+            android:layout_marginTop="35dp"
+            android:layout_width="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="5dp"
+            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_below="@id/lineTitleSakura"
+            android:background="@android:color/white"/>
+
+
+        <TextView
+            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvRegionSakura"
+            android:layout_alignBottom="@id/lineRegionSakura"
+            />
+
+        <View
+            android:id="@+id/lineRegionSakura"
+            android:layout_marginTop="35dp"
+            android:layout_width="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="5dp"
+            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_below="@id/lineNameSakura"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoteSakura"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:layout_alignBottom="@id/lineNoteSakura"
+            />
+
+        <View
+            android:id="@+id/lineNoteSakura"
+            android:layout_marginTop="35dp"
+            android:layout_width="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="5dp"
+            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_below="@id/lineRegionSakura"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expired Date"
+            android:layout_marginTop="25dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExp"
+            android:layout_below="@id/imgPhotoSakura"
+            />
+
+        <TextView
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regards"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/tvExp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvRegards"
+            android:layout_below="@id/imgPhotoSakura"
+            />
+
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22-07-2021"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpDate"
+            android:layout_below="@id/tvExp"
+            />
+
+        <TextView
+            android:layout_marginStart="30dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvExpDate"
+            android:text="Nick"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNickSakura"
+            android:layout_below="@id/tvRegards"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

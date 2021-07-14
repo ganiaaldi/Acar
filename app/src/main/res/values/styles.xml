@@ -22,6 +22,12 @@
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
+    <style name="WhiteBoldCard" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
     <style name="WhiteBoldTextSmall" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/opensans_regular</item>
         <item name="android:textSize">14sp</item>

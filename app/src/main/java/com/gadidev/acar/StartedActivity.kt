@@ -1,5 +1,6 @@
 package com.gadidev.acar
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -41,5 +42,10 @@ class StartedActivity : AppCompatActivity() {
         val adapter = GifAdapter(getGifs())
         binding.sliderView.create(adapter, 4000, lifecycle)
         binding.sliderView.setCustomIndicator(findViewById(R.id.state_indicator))
+        binding.btnStart.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 }
