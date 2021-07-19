@@ -18,7 +18,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@drawable/button_pink">
+        android:background="@drawable/button_pink"
+        android:visibility="gone">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
@@ -56,7 +57,7 @@
         android:layout_marginTop="35dp"
         android:layout_width="320dp"
         android:layout_marginStart="15dp"
-        android:layout_height="5dp"
+        android:layout_height="3dp"
         android:background="@android:color/white"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -70,8 +71,8 @@
             android:background="@drawable/border_white"/>
 
         <TextView
-            android:layout_toRightOf="@id/imgPhotoSakura"
-            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@id/imgPhotoSakura"
+            android:layout_marginStart="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
@@ -85,15 +86,15 @@
             android:layout_marginTop="35dp"
             android:layout_width="200dp"
             android:layout_marginStart="15dp"
-            android:layout_height="5dp"
-            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/imgPhotoSakura"
             android:layout_below="@id/lineTitleSakura"
             android:background="@android:color/white"/>
 
 
         <TextView
-            android:layout_toRightOf="@id/imgPhotoSakura"
-            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@id/imgPhotoSakura"
+            android:layout_marginStart="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
@@ -107,14 +108,14 @@
             android:layout_marginTop="35dp"
             android:layout_width="200dp"
             android:layout_marginStart="15dp"
-            android:layout_height="5dp"
-            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/imgPhotoSakura"
             android:layout_below="@id/lineNameSakura"
             android:background="@android:color/white"/>
 
         <TextView
-            android:layout_toRightOf="@id/imgPhotoSakura"
-            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@id/imgPhotoSakura"
+            android:layout_marginStart="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tvNoteSakura"
@@ -128,8 +129,8 @@
             android:layout_marginTop="35dp"
             android:layout_width="200dp"
             android:layout_marginStart="15dp"
-            android:layout_height="5dp"
-            android:layout_toRightOf="@id/imgPhotoSakura"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/imgPhotoSakura"
             android:layout_below="@id/lineRegionSakura"
             android:background="@android:color/white"/>
 
@@ -150,7 +151,7 @@
             android:layout_height="wrap_content"
             android:text="Regards"
             android:layout_marginTop="25dp"
-            android:layout_toRightOf="@id/tvExp"
+            android:layout_toEndOf="@id/tvExp"
             style="@style/WhiteBoldCard"
             android:id="@+id/tvRegards"
             android:layout_below="@id/imgPhotoSakura"
@@ -172,7 +173,7 @@
             android:layout_marginStart="30dp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/tvExpDate"
+            android:layout_toEndOf="@id/tvExpDate"
             android:text="Nick"
             android:gravity="center"
             android:layout_marginTop="5dp"
@@ -181,5 +182,571 @@
             android:layout_below="@id/tvRegards"
             />
     </RelativeLayout>
+
+    <!-- Bubble -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintCircleRadius="8dp"
+        android:id="@+id/frameBubble"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button_blue"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bubble"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="320dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Friendship Application"
+            style="@style/WhiteBoldText"
+            android:id="@+id/tvTitleBubble"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgLogoBubbleOne"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imgLogoBubbleTwo"
+            />
+
+        <View
+            android:id="@+id/lineTitleBubble"
+            android:layout_marginTop="35dp"
+            android:layout_width="320dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="3dp"
+            android:background="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgPhotoBubble"
+            android:layout_below="@id/lineTitleBubble"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_android_black_24dp"
+            android:background="@drawable/border_white"/>
+
+        <TextView
+            android:layout_toStartOf="@id/imgPhotoBubble"
+            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNameBubble"
+            android:layout_alignBottom="@id/lineNameBubble"
+            />
+
+        <View
+            android:id="@+id/lineNameBubble"
+            android:layout_marginTop="75dp"
+            android:layout_width="90dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="3dp"
+            android:layout_toStartOf="@id/imgPhotoBubble"
+            android:layout_below="@id/lineTitleBubble"
+            android:background="@android:color/white"/>
+
+
+        <TextView
+            android:layout_toEndOf="@id/imgPhotoBubble"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvRegionBubble"
+            android:layout_alignBottom="@id/lineRegionBubble"
+            />
+
+        <View
+            android:id="@+id/lineRegionBubble"
+            android:layout_marginTop="45dp"
+            android:layout_width="90dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/imgPhotoBubble"
+            android:layout_below="@id/lineTitleBubble"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_toEndOf="@id/imgPhotoBubble"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoteBubble"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:layout_alignBottom="@id/lineNoteBubble"
+            />
+
+        <View
+            android:id="@+id/lineNoteBubble"
+            android:layout_marginTop="45dp"
+            android:layout_width="90dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/imgPhotoBubble"
+            android:layout_below="@id/lineRegionBubble"
+            android:background="@android:color/white"/>
+
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="22-07-2021"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpDateBubble"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_marginStart="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Nick"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNickBubble"
+            android:layout_below="@id/imgPhotoBubble"
+            />
+    </RelativeLayout>
+
+    <!-- Square -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintCircleRadius="8dp"
+        android:id="@+id/frameSquare"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button_blue"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/square"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="320dp"
+            android:gravity="left"
+            android:layout_toStartOf="@id/imgLogoSquareTwo"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:text="Friendship Application"
+            style="@style/WhiteBoldText"
+            android:id="@+id/tvTitleSquare"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imgLogoSquareTwo"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/imgPhotoSquare"
+            android:layout_below="@id/tvRegionSquare"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:background="@drawable/border_white"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNameSquare"
+            android:layout_below="@id/tvTitleSquare"
+            />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvRegionSquare"
+            android:layout_below="@id/tvNameSquare"
+            />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoteSquare"
+            android:text="Name"
+            style="@style/WhiteBoldCard"
+            android:layout_below="@id/imgLogoSquareTwo"
+            />
+
+        <TextView
+            android:layout_marginStart="55dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Exp Date"
+            android:layout_toRightOf="@id/tvNickSquare"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpSquare"
+            android:layout_above="@id/tvExpDateSquare"
+            />
+
+
+        <TextView
+            android:layout_marginStart="55dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="22-07-2021"
+            android:layout_toRightOf="@id/tvNickSquare"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpDateSquare"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Nick"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNickSquare"
+            android:layout_below="@id/imgPhotoSquare"
+            />
+    </RelativeLayout>
+
+    <!-- Simple -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintCircleRadius="8dp"
+        android:id="@+id/frameSimple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button_blue"
+        android:visibility="gone">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="320dp"
+            android:gravity="left"
+            android:layout_toRightOf="@id/imgLogoSimpleTwo"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:text="Friendship Application"
+            style="@style/WhiteBoldText"
+            android:id="@+id/tvTitleSimple"
+            android:layout_marginTop="7dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgLogoSimpleTwo"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/imgPhotoSimple"
+            android:layout_below="@id/tvExpDateSimple"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_android_black_24dp"
+            android:background="@drawable/border_white"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNameSimple"
+            android:layout_alignBottom="@id/lineNameSimple"
+            />
+
+
+        <View
+            android:id="@+id/lineNameSimple"
+            android:layout_marginTop="65dp"
+            android:layout_width="220dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="3dp"
+            android:background="@android:color/white"
+            android:layout_below="@id/tvTitleSimple"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvRegionSimple"
+            android:layout_alignBottom="@id/lineRegionSimple"
+            />
+
+
+        <View
+            android:id="@+id/lineRegionSimple"
+            android:layout_marginTop="35dp"
+            android:layout_width="220dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="3dp"
+            android:background="@android:color/white"
+            android:layout_below="@id/tvNameSimple"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNoteSimple"
+            android:layout_alignBottom="@id/lineNoteSimple"
+            />
+
+        <View
+            android:id="@+id/lineNoteSimple"
+            android:layout_marginTop="45dp"
+            android:layout_width="220dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="3dp"
+            android:background="@android:color/white"
+            android:layout_below="@id/lineRegionSimple"/>
+        <TextView
+            android:layout_marginStart="55dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Exp Date"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpSimple"
+            android:layout_below="@id/tvTitleSimple"
+            />
+
+
+        <TextView
+            android:layout_marginStart="55dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="22-07-2021"
+            android:layout_alignParentRight="true"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpDateSimple"
+            android:layout_below="@id/tvExpSimple"
+            />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Nick"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvNickSimple"
+            android:layout_below="@id/imgPhotoSimple"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <!-- Casual -->
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintCircleRadius="8dp"
+        android:id="@+id/frameCasual"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button_blue"
+        android:visibility="visible">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="320dp"
+            android:gravity="left"
+            android:layout_toRightOf="@id/imgLogoCasualTwo"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:text="Friendship Application"
+            style="@style/WhiteBoldText"
+            android:id="@+id/tvTitleCasual"
+            android:layout_marginTop="7dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imgLogoCasualTwo"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/imgPhotoCasual"
+            android:layout_below="@id/imgLogoCasualTwo"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_android_black_24dp"
+            android:background="@drawable/border_white"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="10dp"
+            style="@style/WhiteBoldCard"
+            android:layout_toEndOf="@id/imgPhotoCasual"
+            android:id="@+id/tvNameCasual"
+            android:layout_alignBottom="@id/lineNameCasual"
+            />
+
+
+        <View
+            android:id="@+id/lineNameCasual"
+            android:layout_marginTop="50dp"
+            android:layout_width="220dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="3dp"
+            android:layout_toEndOf="@id/imgPhotoCasual"
+            android:background="@android:color/white"
+            android:layout_below="@id/tvTitleCasual"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_toEndOf="@id/imgPhotoCasual"
+            android:layout_marginTop="10dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvRegionCasual"
+            android:layout_alignBottom="@id/lineRegionCasual"
+            />
+
+
+        <View
+            android:id="@+id/lineRegionCasual"
+            android:layout_toEndOf="@id/imgPhotoCasual"
+            android:layout_marginTop="35dp"
+            android:layout_width="220dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="3dp"
+            android:background="@android:color/white"
+            android:layout_below="@id/tvNameCasual"/>
+
+        <TextView
+            android:id="@+id/tvNoteCasual"
+            style="@style/WhiteBoldCard"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lineNoteCasual"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imgPhotoCasual"
+            android:text="Name" />
+
+        <View
+            android:id="@+id/lineNoteCasual"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imgPhotoCasual"
+            android:layout_marginTop="45dp"
+            android:layout_width="220dp"
+            android:layout_height="3dp"
+            android:background="@android:color/white"
+            android:layout_below="@id/lineRegionCasual"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Exp Date"
+            android:layout_marginTop="5dp"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpCasual"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvNickCasual"
+            />
+
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="22-07-2021"
+            style="@style/WhiteBoldCard"
+            android:id="@+id/tvExpDateCasual"
+            android:layout_below="@id/tvExpCasual"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/tvNickCasual"
+            style="@style/WhiteBoldCard"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPhotoCasual"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Nick" />
+    </RelativeLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
