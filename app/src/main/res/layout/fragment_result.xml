@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Friendship Application"
-            style="@style/WhiteBoldText"
+            style="@style/WhiteBoldAmatic"
             android:id="@+id/tvTitleSakura"
             />
 
@@ -82,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAmatic"
             android:id="@+id/tvNameSakura"
             android:layout_alignBottom="@id/lineNameSakura"
             />
@@ -104,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAmatic"
             android:id="@+id/tvRegionSakura"
             android:layout_alignBottom="@id/lineRegionSakura"
             />
@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvNoteSakura"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAmatic"
             android:layout_alignBottom="@id/lineNoteSakura"
             />
 
@@ -146,31 +146,31 @@
             android:layout_height="wrap_content"
             android:text="Expired Date"
             android:layout_marginTop="25dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAmatic"
             android:id="@+id/tvExp"
             android:layout_below="@id/imgPhotoSakura"
             />
 
+
         <TextView
-            android:layout_marginStart="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Regards"
-            android:layout_marginTop="25dp"
-            android:layout_toEndOf="@id/tvExp"
-            style="@style/WhiteBoldCard"
             android:id="@+id/tvRegards"
+            style="@style/WhiteRegAmatic"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/imgPhotoSakura"
-            />
-
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/tvExp"
+            android:text="Regards," />
 
         <TextView
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="22-07-2021"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAmatic"
             android:id="@+id/tvExpDate"
             android:layout_below="@id/tvExp"
             />
@@ -183,7 +183,7 @@
             android:text="Nick"
             android:gravity="center"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAmatic"
             android:id="@+id/tvNickSakura"
             android:layout_below="@id/tvRegards"
             />
@@ -207,7 +207,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Friendship Application"
-            style="@style/WhiteBoldText"
+            style="@style/WhiteBoldMouse"
             android:id="@+id/tvTitleBubble"
             />
 
@@ -251,7 +251,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegMouse"
             android:id="@+id/tvNameBubble"
             android:layout_alignBottom="@id/lineNameBubble"
             />
@@ -273,7 +273,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegMouse"
             android:id="@+id/tvRegionBubble"
             android:layout_alignBottom="@id/lineRegionBubble"
             />
@@ -295,7 +295,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvNoteBubble"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegMouse"
             android:layout_alignBottom="@id/lineNoteBubble"
             />
 
@@ -312,14 +312,15 @@
 
         <TextView
             android:layout_marginStart="15dp"
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="22-07-2021"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegMouse"
             android:id="@+id/tvExpDateBubble"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvNickBubble"
             />
 
         <TextView
@@ -330,7 +331,7 @@
             android:text="Nick"
             android:gravity="center"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegMouse"
             android:id="@+id/tvNickBubble"
             android:layout_below="@id/imgPhotoBubble"
             />
@@ -341,12 +342,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frameSquare"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/square"/>
+            android:background="@drawable/square" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="320dp"
@@ -355,7 +356,7 @@
             android:layout_marginStart="5dp"
             android:layout_height="wrap_content"
             android:text="Friendship Application"
-            style="@style/WhiteBoldText"
+            style="@style/WhiteBoldAllura"
             android:id="@+id/tvTitleSquare"
             />
 
@@ -384,7 +385,7 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:layout_marginTop="10dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAllura"
             android:id="@+id/tvNameSquare"
             android:layout_below="@id/tvTitleSquare"
             />
@@ -395,7 +396,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAllura"
             android:id="@+id/tvRegionSquare"
             android:layout_below="@id/tvNameSquare"
             />
@@ -403,36 +404,37 @@
         <TextView
             android:layout_alignParentEnd="true"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:id="@+id/tvNoteSquare"
             android:text="Name"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAllura"
             android:layout_below="@id/imgLogoSquareTwo"
             />
 
         <TextView
             android:layout_marginStart="55dp"
-            android:layout_width="50dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Exp Date"
-            android:layout_toRightOf="@id/tvNickSquare"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAllura"
             android:id="@+id/tvExpSquare"
+            android:layout_alignParentRight="true"
             android:layout_above="@id/tvExpDateSquare"
             />
 
 
         <TextView
             android:layout_marginStart="55dp"
-            android:layout_width="50dp"
+            android:layout_width="80dp"
+            android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="22-07-2021"
-            android:layout_toRightOf="@id/tvNickSquare"
+            android:text="22-07-\n2021"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAllura"
+            android:layout_alignParentRight="true"
             android:id="@+id/tvExpDateSquare"
             android:layout_alignParentBottom="true"
             />
@@ -443,8 +445,7 @@
             android:layout_height="wrap_content"
             android:text="Nick"
             android:gravity="center"
-            android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegAllura"
             android:id="@+id/tvNickSquare"
             android:layout_below="@id/imgPhotoSquare"
             />
@@ -455,7 +456,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frameSimple"
-        android:visibility="gone">
+        android:visibility="visible">
 
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -465,7 +466,7 @@
             android:layout_marginStart="5dp"
             android:layout_height="wrap_content"
             android:text="Friendship Application"
-            style="@style/WhiteBoldText"
+            style="@style/WhiteBoldBlackChancery"
             android:id="@+id/tvTitleSimple"
             android:layout_marginTop="7dp"
             />
@@ -494,7 +495,7 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:layout_marginTop="10dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegBlackChancery"
             android:id="@+id/tvNameSimple"
             android:layout_alignBottom="@id/lineNameSimple"
             />
@@ -515,7 +516,7 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:layout_marginTop="10dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegBlackChancery"
             android:id="@+id/tvRegionSimple"
             android:layout_alignBottom="@id/lineRegionSimple"
             />
@@ -536,7 +537,7 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:layout_marginTop="10dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegBlackChancery"
             android:id="@+id/tvNoteSimple"
             android:layout_alignBottom="@id/lineNoteSimple"
             />
@@ -556,7 +557,7 @@
             android:text="Exp Date"
             android:layout_alignParentRight="true"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegBlackChancery"
             android:id="@+id/tvExpSimple"
             android:layout_below="@id/tvTitleSimple"
             />
@@ -567,8 +568,9 @@
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:text="22-07-2021"
+            android:textSize="16sp"
             android:layout_alignParentRight="true"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegBlackChancery"
             android:id="@+id/tvExpDateSimple"
             android:layout_below="@id/tvExpSimple"
             />
@@ -580,7 +582,7 @@
             android:text="Nick"
             android:gravity="center"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegBlackChancery"
             android:id="@+id/tvNickSimple"
             android:layout_below="@id/imgPhotoSimple"
             android:layout_alignParentRight="true"
@@ -592,17 +594,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frameCasual"
-        android:visibility="visible">
+        android:visibility="gone">
 
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="320dp"
-            android:gravity="left"
             android:layout_toRightOf="@id/imgLogoCasualTwo"
             android:layout_marginStart="5dp"
             android:layout_height="wrap_content"
             android:text="Friendship Application"
-            style="@style/WhiteBoldText"
+            style="@style/WhiteBoldCarneval"
+            android:textAlignment="center"
             android:id="@+id/tvTitleCasual"
             android:layout_marginTop="7dp"
             />
@@ -631,7 +633,7 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:layout_marginTop="10dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegCarneval"
             android:layout_toEndOf="@id/imgPhotoCasual"
             android:id="@+id/tvNameCasual"
             android:layout_alignBottom="@id/lineNameCasual"
@@ -655,7 +657,7 @@
             android:text="Name"
             android:layout_toEndOf="@id/imgPhotoCasual"
             android:layout_marginTop="10dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegCarneval"
             android:id="@+id/tvRegionCasual"
             android:layout_alignBottom="@id/lineRegionCasual"
             />
@@ -673,7 +675,7 @@
 
         <TextView
             android:id="@+id/tvNoteCasual"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegCarneval"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/lineNoteCasual"
@@ -698,7 +700,7 @@
             android:layout_height="wrap_content"
             android:text="Exp Date"
             android:layout_marginTop="5dp"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegCarneval"
             android:id="@+id/tvExpCasual"
             android:layout_alignParentRight="true"
             android:layout_below="@id/tvNickCasual"
@@ -706,11 +708,10 @@
 
 
         <TextView
-            android:layout_marginStart="5dp"
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:text="22-07-2021"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegCarneval"
             android:id="@+id/tvExpDateCasual"
             android:layout_below="@id/tvExpCasual"
             android:layout_alignParentRight="true"
@@ -718,7 +719,7 @@
 
         <TextView
             android:id="@+id/tvNickCasual"
-            style="@style/WhiteBoldCard"
+            style="@style/WhiteRegCarneval"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgPhotoCasual"

@@ -46,4 +46,65 @@
         <item name="android:textColor">@color/colorBlack</item>
     </style>
 
+
+    <style name="WhiteBoldCarneval" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/carnevalee_freakshow</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteRegCarneval" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/carnevalee_freakshow</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteBoldAllura" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/allura</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteRegAllura" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/allura</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteBoldBlackChancery" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/black_chancery</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteRegBlackChancery" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/black_chancery</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <style name="WhiteBoldMouse" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/mousememoirs</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteRegMouse" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/mousememoirs</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteBoldAmatic" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/amatic</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteRegAmatic" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/amatic</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
 </resources>
