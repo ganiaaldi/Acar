@@ -8,6 +8,19 @@
     android:background="@drawable/bg_gradient">
 
 
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintCircleRadius="8dp"
+        android:id="@+id/imgResult"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/button_pink"
+        android:visibility="invisible">
+    </ImageView>
+
 
     <RelativeLayout
         android:layout_width="350dp"
