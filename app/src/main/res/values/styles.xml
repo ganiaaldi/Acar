@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorDark</item>
@@ -46,6 +46,12 @@
         <item name="android:textColor">@color/colorBlack</item>
     </style>
 
+
+    <style name="WhiteGrayTextSmall" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
 
     <style name="WhiteBoldCarneval" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/carnevalee_freakshow</item>

@@ -3,11 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/primary_navigation"
-    app:startDestination="@id/resultFragment">
+    app:startDestination="@id/inputForm">
 
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.gadidev.acar.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/inputForm"
+        android:name="com.gadidev.acar.input.InputForm"
+        android:label="fragment_input_form"
+        tools:layout="@layout/fragment_input_form" />
 </navigation>
