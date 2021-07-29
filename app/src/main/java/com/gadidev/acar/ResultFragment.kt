@@ -10,6 +10,7 @@ import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
 import android.media.MediaScannerConnection
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.os.SystemClock
@@ -20,6 +21,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.core.content.contentValuesOf
 import androidx.core.graphics.drawable.toDrawable
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,6 +32,8 @@ import com.gadidev.acar.model.Card
 import java.io.File
 import java.io.FileOutputStream
 import java.io.OutputStream
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class ResultFragment : Fragment() {
 
@@ -50,9 +54,57 @@ class ResultFragment : Fragment() {
         return view
     }
 
+
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setView()
+        savePhoto()
+        getArgs()
+        setDate()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun setDate() {
+        val currentDateTime = LocalDateTime.now()
+        val expDate = currentDateTime.plusYears(1)
+        expDate.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
+        binding.tvExpDate.text = expDate.toString()
+        binding.tvExpDateBubble.text = expDate.toString()
+        binding.tvExpDateCasual.text = expDate.toString()
+        binding.tvExpDateSimple.text = expDate.toString()
+        binding.tvExpDateSquare.text = expDate.toString()
+    }
+
+    private fun getArgs() {
+        binding.tvTitleSimple.text =  ResultFragmentArgs.fromBundle(requireArguments()).title
+        binding.tvNameSimple.text =  ResultFragmentArgs.fromBundle(requireArguments()).fullname
+        binding.tvNickSimple.text =  ResultFragmentArgs.fromBundle(requireArguments()).nickname
+        binding.tvNoteSimple.text =  ResultFragmentArgs.fromBundle(requireArguments()).note
+        binding.tvRegionSimple.text =  ResultFragmentArgs.fromBundle(requireArguments()).region
+        binding.tvTitleCasual.text =  ResultFragmentArgs.fromBundle(requireArguments()).title
+        binding.tvNameCasual.text =  ResultFragmentArgs.fromBundle(requireArguments()).fullname
+        binding.tvNickCasual.text =  ResultFragmentArgs.fromBundle(requireArguments()).nickname
+        binding.tvNoteCasual.text =  ResultFragmentArgs.fromBundle(requireArguments()).note
+        binding.tvRegionCasual.text =  ResultFragmentArgs.fromBundle(requireArguments()).region
+        binding.tvTitleBubble.text =  ResultFragmentArgs.fromBundle(requireArguments()).title
+        binding.tvNameBubble.text =  ResultFragmentArgs.fromBundle(requireArguments()).fullname
+        binding.tvNickBubble.text =  ResultFragmentArgs.fromBundle(requireArguments()).nickname
+        binding.tvNoteBubble.text =  ResultFragmentArgs.fromBundle(requireArguments()).note
+        binding.tvRegionBubble.text =  ResultFragmentArgs.fromBundle(requireArguments()).region
+        binding.tvTitleSakura.text =  ResultFragmentArgs.fromBundle(requireArguments()).title
+        binding.tvNameSakura.text =  ResultFragmentArgs.fromBundle(requireArguments()).fullname
+        binding.tvNickSakura.text =  ResultFragmentArgs.fromBundle(requireArguments()).nickname
+        binding.tvNoteSakura.text =  ResultFragmentArgs.fromBundle(requireArguments()).note
+        binding.tvRegionSakura.text =  ResultFragmentArgs.fromBundle(requireArguments()).region
+        binding.tvTitleSquare.text =  ResultFragmentArgs.fromBundle(requireArguments()).title
+        binding.tvNameSquare.text =  ResultFragmentArgs.fromBundle(requireArguments()).fullname
+        binding.tvNickSquare.text =  ResultFragmentArgs.fromBundle(requireArguments()).nickname
+        binding.tvNoteSquare.text =  ResultFragmentArgs.fromBundle(requireArguments()).note
+        binding.tvRegionSquare.text =  ResultFragmentArgs.fromBundle(requireArguments()).region
+    }
+
+    private fun savePhoto() {
         binding.btnSave.setOnClickListener {
             val imageBitmap = getBitmapFromView(binding.layoutResult)
             binding.imgResult.setImageBitmap(imageBitmap)

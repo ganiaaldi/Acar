@@ -1,12 +1,12 @@
 package com.gadidev.acar.input
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.gadidev.acar.R
 import com.gadidev.acar.databinding.FragmentInputFormBinding
 
 class InputForm : Fragment() {
@@ -41,7 +41,16 @@ class InputForm : Fragment() {
 
     private fun nextBtn() {
         binding.btnNext.setOnClickListener {
-            findNavController().navigate(R.id.resultFragment)
+            val title = binding.inputTitle.text.toString()
+            val fullName = binding.inputFullName.text.toString()
+            val nickname = binding.inputNickname.text.toString()
+            val note = binding.inputNote.text.toString()
+            val region = binding.inputRegion.text.toString()
+            Log.d("Apa","${title},${fullName},${nickname},${note},${region}")
+//            saveShare()
+            val args = InputFormDirections.actionInputFormToResultFragment(title,fullName,nickname,note,region)
+            findNavController().navigate(args)
+//            findNavController().navigate(R.id.photoFragment)
         }
     }
 
